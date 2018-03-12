@@ -90,3 +90,87 @@ logs:
     service: testdatadog
     source: StagingAPI
     type: file
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/auth.log
+    service: authlog
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: authlog
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/versapay_eft.log
+    service: versapay_eft
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: versapay_eft
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/orgunit_dismantler.log
+    service: orgunit_dismantler
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: orgunit_dismantler
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/intercom_worker.log
+    service: intercom_worker
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: intercom_worker
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/dismantler.log
+    service: dismantler
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: dismantler
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/image_import.log
+    service: image_import
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: image_import
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/cron_poimport.log
+    service: cron_poimport
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: cron_poimport
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/cron_newpoimport.log
+    service: cron_newpoimport
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: cron_newpoimport
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/cron_importer_producer.log
+    service: cron_importer_producer
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: cron_importer_producer
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/cron_images.log
+    service: cron_images
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: cron_images
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/cron_exports.log
+    service: cron_exports
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: cron_exports
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/rex-import-queue.log
+    service: rex-import-queue
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: rex-import-queue
