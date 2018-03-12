@@ -1,0 +1,92 @@
+init_config: ~
+instances: ~
+logs: 
+  - 
+    path: /var/www/html/app/logs/prod/emailnotifications.log
+    service: emailnotifications
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: emailnotifications
+    type: file
+  - 
+    path: /var/www/html/app/logs/prod/import-queue.log
+    service: import-queue
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: import-queue
+    type: file
+  - 
+    path: /var/www/html/app/logs/prod/integration.log
+    service: integration
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: integration
+    type: file
+  - 
+    path: /var/www/html/app/logs/prod/list_import.log
+    service: list_import
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: list_import
+    type: file
+  - 
+    path: /var/www/html/app/logs/prod/payment_request.log
+    service: payment_request
+    source: StagingAPI
+    sourcecategory: payment_request
+    tags: fispan
+    type: file
+  - 
+    path: /var/www/html/app/logs/prod/payments.log
+    service: payments
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: payments
+    type: file
+  - 
+    path: /var/www/html/app/logs/prod/prod.log
+    service: prod.log
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: prod
+    type: file
+  - 
+    path: /var/www/html/app/logs/prod/cron.log
+    service: cron
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: cron
+    type: file
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/fispan.log
+    service: fispan
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: fispan
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/intercom-queue.log
+    service: import-queue
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: import-queue
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/cron_intercom.log
+    service: cron_intercom
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: cron_intercom
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/intercom_producer.log
+    service: intercom_producer
+    source: StagingAPI
+    sourcecategory: sourcecode
+    tags: intercom_producer
+  - 
+    path: /var/www/html/app/logs/prod/*.datadog
+    service: testdatadog
+    source: StagingAPI
+    type: file
