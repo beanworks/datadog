@@ -174,3 +174,10 @@ logs:
     source: StagingAPI
     sourcecategory: sourcecode
     tags: rex-import-queue
+- 
+    type: file
+    path: /var/log/nginx/error.log
+    service: nginx-error
+    source: DevStagingAPI
+    sourcecategory: sourcecode
+    tags: nginx-error
