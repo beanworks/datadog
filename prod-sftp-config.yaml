@@ -1,0 +1,17 @@
+init_config: ~
+instances: ~
+logs: 
+  - 
+    path: /opt/beanworks-sftp-server/log.err
+    service: sftp-log.err
+    source: ProdStagingAPI
+    sourcecategory: sourcecode
+    tags: sftp-log.err
+    type: file
+  - 
+    path: /opt/beanworks-sftp-server/log.out
+    service: sftp-log.out
+    source: ProdStagingAPI
+    sourcecategory: sourcecode
+    tags: sftp-log.out
+    type: file
