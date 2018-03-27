@@ -178,6 +178,13 @@ logs:
     type: file
     path: /var/log/nginx/error.log
     service: nginx-error
-    source: DevProdStagingAPI
+    source: ProdStagingAPI
     sourcecategory: sourcecode
     tags: nginx-error
+- 
+    type: file
+    path: /var/log/nginx/access.log
+    service: nginx-access
+    source: ProdStagingAPI
+    sourcecategory: sourcecode
+    tags: nginx-access
