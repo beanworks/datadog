@@ -174,14 +174,14 @@ logs:
     source: ProdStagingAPI
     sourcecategory: sourcecode
     tags: rex-import-queue
-- 
+  - 
     type: file
     path: /var/log/nginx/error.log
     service: nginx-error
     source: ProdStagingAPI
     sourcecategory: sourcecode
     tags: nginx-error
-- 
+  - 
     type: file
     path: /var/log/nginx/access.log
     service: nginx-access
