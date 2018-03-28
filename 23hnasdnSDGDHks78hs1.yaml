@@ -1,0 +1,190 @@
+init_config: ~
+instances: ~
+logs: 
+  - 
+    path: /var/www/html/app/logs/prod/emailnotifications.log
+    service: emailnotifications
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: emailnotifications
+    type: file
+  - 
+    path: /var/www/html/app/logs/prod/import-queue.log
+    service: import-queue
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: import-queue
+    type: file
+  - 
+    path: /var/www/html/app/logs/prod/integration.log
+    service: integration
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: integration
+    type: file
+  - 
+    path: /var/www/html/app/logs/prod/list_import.log
+    service: list_import
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: list_import
+    type: file
+  - 
+    path: /var/www/html/app/logs/prod/payment_request.log
+    service: payment_request
+    source: ProdSageAPI
+    sourcecategory: payment_request
+    tags: fispan
+    type: file
+  - 
+    path: /var/www/html/app/logs/prod/payments.log
+    service: payments
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: payments
+    type: file
+  - 
+    path: /var/www/html/app/logs/prod/prod.log
+    service: prod.log
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: prod
+    type: file
+  - 
+    path: /var/www/html/app/logs/prod/cron.log
+    service: cron
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: cron
+    type: file
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/fispan.log
+    service: fispan
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: fispan
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/intercom-queue.log
+    service: import-queue
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: import-queue
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/cron_intercom.log
+    service: cron_intercom
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: cron_intercom
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/intercom_producer.log
+    service: intercom_producer
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: intercom_producer
+  - 
+    path: /var/www/html/app/logs/prod/*.datadog
+    service: testdatadog
+    source: ProdSageAPI
+    type: file
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/auth.log
+    service: authlog
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: authlog
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/versapay_eft.log
+    service: versapay_eft
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: versapay_eft
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/orgunit_dismantler.log
+    service: orgunit_dismantler
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: orgunit_dismantler
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/intercom_worker.log
+    service: intercom_worker
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: intercom_worker
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/dismantler.log
+    service: dismantler
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: dismantler
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/image_import.log
+    service: image_import
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: image_import
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/cron_poimport.log
+    service: cron_poimport
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: cron_poimport
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/cron_newpoimport.log
+    service: cron_newpoimport
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: cron_newpoimport
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/cron_importer_producer.log
+    service: cron_importer_producer
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: cron_importer_producer
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/cron_images.log
+    service: cron_images
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: cron_images
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/cron_exports.log
+    service: cron_exports
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: cron_exports
+  - 
+    type: file
+    path: /var/www/html/app/logs/prod/rex-import-queue.log
+    service: rex-import-queue
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: rex-import-queue
+  - 
+    type: file
+    path: /var/log/nginx/error.log
+    service: nginx-error
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: nginx-error
+  - 
+    type: file
+    path: /var/log/nginx/access.log
+    service: nginx-access
+    source: ProdSageAPI
+    sourcecategory: sourcecode
+    tags: nginx-access
