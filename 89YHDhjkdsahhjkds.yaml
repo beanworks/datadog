@@ -174,7 +174,7 @@ logs:
     source: Pod99API
     sourcecategory: sourcecode
     tags: rex-import-queue
-- 
+  - 
     type: file
     path: /var/log/nginx/error.log
     service: nginx-error
