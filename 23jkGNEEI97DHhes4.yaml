@@ -188,3 +188,11 @@ logs:
     source: ProdEarlyAPI
     sourcecategory: sourcecode
     tags: nginx-access
+  -
+    type: file
+    path: /var/www/html/app/logs/prod/json_formatted.log
+    service: json_formatted
+    source: ProdEarlyAPI
+    sourcecategory: sourcecode
+    tags: json_formatted
+
